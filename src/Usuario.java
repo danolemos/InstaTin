@@ -1,7 +1,9 @@
 import java.util.ArrayList;
 
 public class Usuario{
-    String login, nome, senha;
+    static String login;
+    String nome;
+    String senha;
     Localidade cidade;
 
     ArrayList < Usuario > seguindo = new ArrayList < >();
@@ -48,6 +50,5 @@ public class Usuario{
         void feed(String[] args){
             // O método feed exibe todos os posts de todos os usuário que ele segue //
             return;
-        }
-    }
+        };
 }

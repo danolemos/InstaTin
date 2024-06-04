@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Entrada {
+
     /**
      * Classe com as rotinas de entrada e saída do projeto
      * @author Hilario Seibel Junior e Daniel Oliveira Lemos
@@ -127,13 +128,13 @@ public class Entrada {
     public void login(Sistema s){
         String login = this.lerLinha("Login: ");
 
-        if (s.buscarUsuario(login) == null){
+        if (buscarUsuario(login) == null){
             System.out.println("ERRO: Login inexistente");
         }
 
         String senha = this.lerLinha("Senha: ");
 
-        while (s.buscarUsuario(senha) == null){
+        while (buscarUsuario(senha) == null){
             senha = this.lerLinha("Senha incorreta. Insira a senha novamente: ");
         }
 
@@ -182,7 +183,7 @@ public class Entrada {
         // validar senha
         String senha = this.lerLinha("Senha: ");
 
-        while (s.buscarUsuario(senha) == null){
+        while (buscarUsuario(senha) == null){
             senha = this.lerLinha("Senha incorreta. Insira a senha novamente: ");
         }
 

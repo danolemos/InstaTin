@@ -7,6 +7,10 @@ public class Pessoa extends Usuario{
 
         ArrayList <Usuario> interesses = new ArrayList <>();
 
+        public Pessoa(Pessoa p) {
+                super();
+        }
+
         public String toString(){
             return nome + " (" + login + " - " + cpf + ")";
         };
