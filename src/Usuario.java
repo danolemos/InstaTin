@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Usuario(){
+public class Usuario{
     String login, nome, senha;
     Localidade cidade;
 
@@ -35,17 +35,17 @@ public class Usuario(){
         }
     }
 
-        void seguir(String[]){
+        void seguir(String[] args){
             seguindo.add(this);
         };
 
-        void mostrarPosts{
+        void mostrarPosts(String[] args){
             for (int i = 0; i < posts.size() ; i ++) {
                 System.out.println(posts.get(i));
             }
         }
 
-        void feed{
+        void feed(String[] args){
             // O método feed exibe todos os posts de todos os usuário que ele segue //
             return;
         }
