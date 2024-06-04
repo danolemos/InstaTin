@@ -18,7 +18,7 @@ public class Usuario(){
         return this.nome + this.login;
     }
 
-    void postar(String foto, String legenda, Data hoje, String senha){
+    void postar(String foto, String legenda, Data hoje, String senha) {
 
         // criar postagem //
         Postagem p = new Postagem();
@@ -26,17 +26,18 @@ public class Usuario(){
         legenda = legenda;
         Data d = hoje;
 
-        if (senha == this.senha){
+        if (senha == this.senha) {
 
             // inserir na lista de posts //
             posts.add(p);
 
 
         }
+    }
 
-        void seguir(Usuario this){
+        void seguir(String[]){
             seguindo.add(this);
-        }
+        };
 
         void mostrarPosts{
             for (int i = 0; i < posts.size() ; i ++) {

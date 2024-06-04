@@ -1,4 +1,4 @@
-public class Postagem(){
+public class Postagem{
     String foto, legenda;
     Data d;
 

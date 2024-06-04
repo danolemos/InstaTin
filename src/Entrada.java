@@ -1,5 +1,6 @@
 package Fotos;
 
+import javax.xml.crypto.Data;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -98,7 +99,9 @@ public class Entrada {
         int mes = this.lerInteiro("Digite seu mes de nascimento: ");
         int ano = this.lerInteiro("Digite seu ano de nascimento: ");
 
-        Pessoa p = new Pessoa(login, nome, senha, cpf, dia, mes, ano);
+        Data data = new Data(dia, mes, ano);
+
+        Pessoa p = new Pessoa(login, nome, senha, cpf, data);
 
         System.out.println("*************Pessoa cadastrada com sucesso*************");
     }
